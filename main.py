@@ -1,62 +1,59 @@
-from random import randint
-
-class Generator:
-
-    #scheme is a list containing tuples with type name and it's length in characters
-    def __init__(self, name, scheme, references = None):
-        self.name = name
-        self.scheme = scheme
-        self.references = references
-        self.data = {}
-        for i in range(len(scheme)):
-            #if the data type is not in the dict and is not a special type, try to load it from file
-            if not scheme[i][0] in self.data and scheme[i][0] not in ['ref']:
-                try:
-                    self._loadData(scheme[i][0])
-                except IOError:
-                    print("Couldn't open data file " + scheme[i][0])
-
-    def _loadData(self, filename):
-        try:
-            with open(filename, 'r') as file:
-                content = file.read().splitlines()
-            self.data[filename] = content
-            file.close()
-        except IOError:
-            raise
-
-    def _generateQuery(self):
-        query = []
-        query.append('INSERT INTO ' + self.name + ' VALUES(')
-        for i in range(len(self.scheme)):
-            if self.scheme[i][0] == 'ref':
-                query.append('\tident_current('+self.references[self.scheme[i][1]]+'),')
-            else:
-                #it's ugly but it works
-                #takes a random value of needed type, cuts it to the desired length and appends to the query list
-                query.append('\t'+self.data[self.scheme[i][0]][randint(0,len(self.data[self.scheme[i][0]]))][0:self.scheme[i][1]]+',')
-        query.append(');')
-        return query
-
-    def generateFile(self, numberOfQueries):
-        queries = []
-        for i in range(numberOfQueries):
-            queries.append(self._generateQuery())
-        with open(self.name + '.sql', 'w') as file:
-            for query in queries:
-                for line in query:
-                    file.write(line + '\n')
-            file.close()
+from generator import Generator
 
 
-g = Generator('helloworld', [('ref',0),('ref',1),('varchar',10)], ['hello','world'])
-g.generateFile(5)
+placowkiBadawcze = Generator(
+    'PlacowkiBadawcze',
+    [('varchar',20),('varchar',20),('varchar',10),('varchar',20)]
+)
+placowkiBadawcze.generateQueries(10)
 
+obserwacje = Generator(
+    'Obserwacje',
+    [('id',0),('date',0),('varchar',20),('ref',0)],
+    [placowkiBadawcze.name]
+)
+obserwacje.generateQueries(10)
 
+konstelacje = Generator(
+    'Konstelacje',
+    [('varchar',20),('pora_roku',6),('integer',2)]
+)
+konstelacje.generateQueries(10)
 
+obiektyKosmiczne = Generator(
+    'ObiektyKosmiczne',
+    [('id',0),('varchar',15),('varchar',15),('ref',0),('ref',1)],
+    [obserwacje.name,konstelacje.name]
+)
+obiektyKosmiczne.generateQueries(10)
 
+galaktyki = Generator(
+    'Galaktyki',
+    [('ref',0),('typ_galaktyki',3),('integer',6),('integer',6),('integer',6)],
+    [obiektyKosmiczne.name]
+)
+galaktyki.generateQueries(10)
 
+ukladyPlanetarne = Generator(
+    'UkladyPlanetarne',
+    [('ref',0),('integer',2),('integer',2),('integer',10),('integer',10),('ref',1)],
+    [obiektyKosmiczne.name,galaktyki.name]
+)
+ukladyPlanetarne.generateQueries(10)
 
+gwiazdy = Generator(
+    'Gwizady',
+    [('ref',0),('varchar',16),('integer',10),('varchar',1),('integer',6),('integer',6),('ref',1),('ref',2)],
+    [obiektyKosmiczne.name,ukladyPlanetarne.name,'Gwiazdy']
+)
+gwiazdy.generateQueries(10)
+
+planety = Generator(
+    'Planety',
+    [('ref',0),('integer',8),('varchar',16),('varchar',16),('integer',5),('ref',1)],
+    [obiektyKosmiczne.name,ukladyPlanetarne.name]
+)
+planety.generateQueries(10)
 
 
 
