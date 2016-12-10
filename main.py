@@ -3,17 +3,18 @@ from random import randint
 class Generator:
 
     #scheme is a list containing tuples with type name and it's length in characters
-    def __init__(self, name, scheme):
+    def __init__(self, name, scheme, references = None):
         self.name = name
         self.scheme = scheme
+        self.references = references
         self.data = {}
         for i in range(len(scheme)):
-            #if the data type is not in the dict, try to load it from file
-            if not scheme[i][0] in self.data:
+            #if the data type is not in the dict and is not a special type, try to load it from file
+            if not scheme[i][0] in self.data and scheme[i][0] not in ['ref']:
                 try:
                     self._loadData(scheme[i][0])
                 except IOError:
-                    print("Couldn't open data file...")
+                    print("Couldn't open data file " + scheme[i][0])
 
     def _loadData(self, filename):
         try:
@@ -28,9 +29,12 @@ class Generator:
         query = []
         query.append('INSERT INTO ' + self.name + ' VALUES(')
         for i in range(len(self.scheme)):
-            #it's ugly but it works
-            #takes a random value of needed type, cuts it to the desired length and appends to the query list
-            query.append('\t'+self.data[self.scheme[i][0]][randint(0,len(self.data[self.scheme[i][0]]))][0:self.scheme[i][1]]+',')
+            if self.scheme[i][0] == 'ref':
+                query.append('\tident_current('+self.references[self.scheme[i][1]]+'),')
+            else:
+                #it's ugly but it works
+                #takes a random value of needed type, cuts it to the desired length and appends to the query list
+                query.append('\t'+self.data[self.scheme[i][0]][randint(0,len(self.data[self.scheme[i][0]]))][0:self.scheme[i][1]]+',')
         query.append(');')
         return query
 
@@ -45,7 +49,7 @@ class Generator:
             file.close()
 
 
-g = Generator('helloworld', [('varchar',5),('integer',10),('varchar',10)])
+g = Generator('helloworld', [('ref',0),('ref',1),('varchar',10)], ['hello','world'])
 g.generateFile(5)
 
 
