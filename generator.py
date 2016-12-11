@@ -46,7 +46,7 @@ class Generator:
         for i in range(len(self.scheme)):
             string = '\t'
             if self.scheme[i][0] == 'ref':
-                string = string + 'ident_current(' + self.references[self.scheme[i][1]] + ')'
+                string = string + "ident_current('" + self.references[self.scheme[i][1]] + "')"
             elif self.scheme[i][0] == 'id':
                 string = string + str(self.scheme[i][1] + 1)
                 self.scheme[i][1] = self.scheme[i][1] + 1
