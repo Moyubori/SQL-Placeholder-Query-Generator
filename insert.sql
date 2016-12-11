@@ -1,810 +1,810 @@
 INSERT INTO PlacowkiBadawcze VALUES(
-	'Thai National Observ',
-	'Hven, Sweden',
+	'Sankt Andreasberg Ob',
+	'London, England',
 	'znikome',
-	'K4k6h1qaKwQ5iWx0CaFH',
+	'x3O86HI92c2MVvz3eHqq'
 );
 INSERT INTO Obserwacje VALUES(
 	1,
-	'1996-05-02',
-	'YxKPmLkDD0Cq4jgC0UJj',
-	ident_current(PlacowkiBadawcze),
+	'1932-06-30',
+	'qDkCYoVQmPcpy7ZGw3WD',
+	ident_current(PlacowkiBadawcze)
 );
 INSERT INTO Konstelacje VALUES(
-	'Orion',
-	'zima',
-	21,
+	'Wielki',
+	'jesien',
+	35
 );
 INSERT INTO ObiektyKosmiczne VALUES(
 	1,
-	'8MGblwouUK',
-	'78h09m39s',
-	'83d44m48s',
+	'IZRezqqEKO',
+	'81h37m74s',
+	'46d02m11s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Planety VALUES(
 	ident_current(ObiektyKosmiczne),
-	35765491,
-	'planeta podwójna',
-	'SbCl3',
-	67110,
-	ident_current(UkladyPlanetarne),
+	15330827,
+	'planeta oceanicz',
+	'Na2C10H14N2O8',
+	77424,
+	ident_current(UkladyPlanetarne)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
 	2,
-	'hUCw0Hq5q4',
-	'17h37m82s',
-	'62d10m44s',
+	'z3wI9JtDO7',
+	'31h57m61s',
+	'43d70m45s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Gwizady VALUES(
 	ident_current(ObiektyKosmiczne),
-	6930933835,
-	'h',
-	852512,
-	017106,
+	1533082745,
+	'm',
+	517157,
+	848507,
 	ident_current(UkladyPlanetarne),
-	ident_current(Gwiazdy),
+	ident_current(Gwiazdy)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
 	3,
-	'XPcYB57i9g',
-	'32h88m33s',
-	'34d89m47s',
+	'B1xZSpeC7Q',
+	'23h55m44s',
+	'42d39m94s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO UkladyPlanetarne VALUES(
 	ident_current(ObiektyKosmiczne),
 	37,
-	72,
-	2415880295,
-	9557032290,
-	ident_current(Galaktyki),
+	77,
+	9830505316,
+	4675949793,
+	ident_current(Galaktyki)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
 	4,
-	'gWr6oQFZCr',
-	'36h06m51s',
-	'09d94m22',
+	'RIUgPhkme5',
+	'07h96m72s',
+	'32d09m97s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Galaktyki VALUES(
 	ident_current(ObiektyKosmiczne),
-	'S',
-	153308,
-	724623,
+	'S0',
+	684817,
 	517157,
+	424858
 );
 INSERT INTO PlacowkiBadawcze VALUES(
-	'National Optical Ast',
-	'Uppsala, Sweden',
-	'znaczne',
-	'TudXw5Y7os3nEWeteaS7',
+	'Baksan Neutrino Obse',
+	'Shevchenkove, Ukrain',
+	'ogromne',
+	'Gf6RHnddEHCA07xojEQX'
 );
 INSERT INTO Obserwacje VALUES(
 	2,
-	'1937-08-18',
-	'Ub5lhcG0D5a9GAKKqTXK',
-	ident_current(PlacowkiBadawcze),
+	'1958-10-10',
+	'1rJgOV1i4u8gsfphHUdN',
+	ident_current(PlacowkiBadawcze)
 );
 INSERT INTO Konstelacje VALUES(
-	'Wielki',
-	'zima',
-	24,
+	'Malarz',
+	'lato',
+	95
 );
 INSERT INTO ObiektyKosmiczne VALUES(
 	5,
-	'2eMNqANiJ9',
-	'95h30m85s',
-	'85d46m48s',
+	'v3LMzYqRe3',
+	'88h05m62s',
+	'34d89m47s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Planety VALUES(
 	ident_current(ObiektyKosmiczne),
-	24158802,
-	'gazowy karzeł',
-	'H2SiF6',
-	96776,
-	ident_current(UkladyPlanetarne),
+	70837029,
+	'planeta oceanicz',
+	'SbCl3',
+	01710,
+	ident_current(UkladyPlanetarne)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
 	6,
-	'WJdVwHG14N',
-	'81h37m74s',
-	'85d79m88s',
+	'2eMNqANiJ9',
+	'95h30m76s',
+	'70d03m11s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Gwizady VALUES(
 	ident_current(ObiektyKosmiczne),
-	1826809499,
-	'g',
-	265129,
-	357654,
+	8485072795,
+	'D',
+	223864,
+	232484,
 	ident_current(UkladyPlanetarne),
-	ident_current(Gwiazdy),
+	ident_current(Gwiazdy)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
 	7,
-	'RIUgPhkme5',
-	'46h64m08s',
-	'16d13m23s',
+	'0vO4z0Sxqq',
+	'60h45m22s',
+	'01d84m23s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO UkladyPlanetarne VALUES(
 	ident_current(ObiektyKosmiczne),
-	57,
-	69,
-	3360744050,
-	3360744050,
-	ident_current(Galaktyki),
+	72,
+	22,
+	3304669002,
+	3705370165,
+	ident_current(Galaktyki)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
 	8,
-	'gS2KXpQ5JZ',
-	'23h55m44s',
-	'70d03m11s',
+	'x7gzYycFMp',
+	'32h88m33s',
+	'76d76m88s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Galaktyki VALUES(
 	ident_current(ObiektyKosmiczne),
-	'E',
-	182680,
-	817652,
-	217705,
-);
-INSERT INTO PlacowkiBadawcze VALUES(
-	'Behlen Observatory',
-	'Tribbey, Oklahoma, U',
-	'lekkie',
-	'mlvIiKS8ajlyZX9eNJus',
-);
-INSERT INTO Obserwacje VALUES(
-	3,
-	'1996-05-02',
-	'rkdvmGcOzGksjNvrmxwu',
-	ident_current(PlacowkiBadawcze),
-);
-INSERT INTO Konstelacje VALUES(
-	'Gołąb',
-	'wiosna',
-	01,
-);
-INSERT INTO ObiektyKosmiczne VALUES(
-	9,
-	'0fMzSeUSBj',
-	'16h54m92s',
-	'01d84m23s',
-	ident_current(Obserwacje),
-	ident_current(Konstelacje),
-);
-INSERT INTO Planety VALUES(
-	ident_current(ObiektyKosmiczne),
-	95910833,
-	'gazowy karzeł',
-	'CS2',
-	22386,
-	ident_current(UkladyPlanetarne),
-);
-INSERT INTO ObiektyKosmiczne VALUES(
-	10,
-	'uclRom8Oob',
-	'07h96m72s',
-	'83d75m05s',
-	ident_current(Obserwacje),
-	ident_current(Konstelacje),
-);
-INSERT INTO Gwizady VALUES(
-	ident_current(ObiektyKosmiczne),
-	0321045057,
-	'V',
-	570247,
-	716193,
-	ident_current(UkladyPlanetarne),
-	ident_current(Gwiazdy),
-);
-INSERT INTO ObiektyKosmiczne VALUES(
-	11,
-	'gWr6oQFZCr',
-	'39h72m97s',
-	'13d19m24s',
-	ident_current(Obserwacje),
-	ident_current(Konstelacje),
-);
-INSERT INTO UkladyPlanetarne VALUES(
-	ident_current(ObiektyKosmiczne),
-	51,
-	68,
-	5702471036,
-	4675949793,
-	ident_current(Galaktyki),
-);
-INSERT INTO ObiektyKosmiczne VALUES(
-	12,
-	'0fMzSeUSBj',
-	'34h64m56s',
-	'02d47m69s',
-	ident_current(Obserwacje),
-	ident_current(Konstelacje),
-);
-INSERT INTO Galaktyki VALUES(
-	ident_current(ObiektyKosmiczne),
-	'SB',
-	983050,
-	724623,
-	716193,
+	'Irr',
+	469456,
+	985630,
+	207086
 );
 INSERT INTO PlacowkiBadawcze VALUES(
 	'Apollo Observatory',
 	'Urumqi, Xinjiang, Ch',
-	'znaczne',
-	'hUCw0Hq5q4UIhRncUD9a',
+	'znikome',
+	'LGo3KOZfx0mh3rrRNwRm'
 );
 INSERT INTO Obserwacje VALUES(
-	4,
-	'1908-07-08',
-	'vdCPenbi5ZMmsHRqPT4r',
-	ident_current(PlacowkiBadawcze),
+	3,
+	'1938-01-01',
+	'C9zCzmRzbBMxW9sAGvzz',
+	ident_current(PlacowkiBadawcze)
 );
 INSERT INTO Konstelacje VALUES(
-	'Rufa',
+	'Orion',
 	'jesien',
-	51,
+	77
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	13,
-	'ZKQzxRGEyb',
-	'26h86m17s',
-	'87d43m72s',
+	9,
+	'ruMwjOgpxv',
+	'15h68m35s',
+	'94d07m85s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Planety VALUES(
 	ident_current(ObiektyKosmiczne),
-	51715730,
-	'planeta podwójna',
-	'Fe2(SO4)3',
-	15330,
-	ident_current(UkladyPlanetarne),
+	95570322,
+	'gazowy olbrzym',
+	'H2SiF6',
+	85251,
+	ident_current(UkladyPlanetarne)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	14,
-	'v3LMzYqRe3',
-	'13h40m64s',
-	'99d65m60s',
+	10,
+	'2vm8EXRrgL',
+	'34h54m28s',
+	'83d75m05s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Gwizady VALUES(
 	ident_current(ObiektyKosmiczne),
-	7161931671,
-	'L',
-	564014,
-	985630,
+	8176529019,
+	'W',
+	032104,
+	955703,
 	ident_current(UkladyPlanetarne),
-	ident_current(Gwiazdy),
+	ident_current(Gwiazdy)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	15,
-	'jEZaCrplTg',
-	'66h54m44s',
-	'00d73m84s',
+	11,
+	'WJdVwHG14N',
+	'46h64m08s',
+	'18d62m06s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO UkladyPlanetarne VALUES(
 	ident_current(ObiektyKosmiczne),
+	66,
 	96,
-	81,
-	2882787826,
-	2651299235,
-	ident_current(Galaktyki),
+	3304669002,
+	0321045057,
+	ident_current(Galaktyki)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	16,
-	'xAensMyJi6',
-	'24h03m97s',
-	'55d04m18s',
+	12,
+	'W25B5Lv1Ad',
+	'36h06m51s',
+	'85d79m88s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Galaktyki VALUES(
 	ident_current(ObiektyKosmiczne),
-	'E',
-	241588,
-	467594,
-	288278,
+	'SB',
+	032104,
+	663580,
+	817652
 );
 INSERT INTO PlacowkiBadawcze VALUES(
 	'Carter Observatory',
-	'Shevchenkove, Ukrain',
-	'lekkie',
-	'dIgipDk1JFLYmOqmnYDQ',
-);
-INSERT INTO Obserwacje VALUES(
-	5,
-	'1888-02-04',
-	'x7gzYycFMpO7LGrqd8Cd',
-	ident_current(PlacowkiBadawcze),
-);
-INSERT INTO Konstelacje VALUES(
-	'Woźnica',
-	'jesien',
-	81,
-);
-INSERT INTO ObiektyKosmiczne VALUES(
-	17,
-	'IZRezqqEKO',
-	'29h47m90s',
-	'11d86m74s',
-	ident_current(Obserwacje),
-	ident_current(Konstelacje),
-);
-INSERT INTO Planety VALUES(
-	ident_current(ObiektyKosmiczne),
-	22386495,
-	'superziemia',
-	'Co(NO3)2',
-	03210,
-	ident_current(UkladyPlanetarne),
-);
-INSERT INTO ObiektyKosmiczne VALUES(
-	18,
-	'WsxZQL0kLo',
-	'05h79m41s',
-	'94d07m85s',
-	ident_current(Obserwacje),
-	ident_current(Konstelacje),
-);
-INSERT INTO Gwizady VALUES(
-	ident_current(ObiektyKosmiczne),
-	1538149184,
-	'Z',
-	336074,
-	985630,
-	ident_current(UkladyPlanetarne),
-	ident_current(Gwiazdy),
-);
-INSERT INTO ObiektyKosmiczne VALUES(
-	19,
-	'aORvhUykR1',
-	'77h94m34s',
-	'59d73m97s',
-	ident_current(Obserwacje),
-	ident_current(Konstelacje),
-);
-INSERT INTO UkladyPlanetarne VALUES(
-	ident_current(ObiektyKosmiczne),
-	51,
-	96,
-	3737584629,
-	5640146638,
-	ident_current(Galaktyki),
-);
-INSERT INTO ObiektyKosmiczne VALUES(
-	20,
-	'K4k6h1qaKw',
-	'25h47m68s',
-	'48d60m40s',
-	ident_current(Obserwacje),
-	ident_current(Konstelacje),
-);
-INSERT INTO Galaktyki VALUES(
-	ident_current(ObiektyKosmiczne),
-	'S0',
-	265129,
-	232484,
-	288278,
-);
-INSERT INTO PlacowkiBadawcze VALUES(
-	'Baksan Neutrino Obse',
-	'Tuscaloosa, Alabama,',
+	'Hven, Sweden',
 	'ogromne',
-	'7Ke5VBOBT9C8yh6sa1Cn',
+	'ruMwjOgpxvDeO9jPPF3I'
 );
 INSERT INTO Obserwacje VALUES(
-	6,
-	'1938-01-01',
-	'UiacF25LWj0SlWehy6Uw',
-	ident_current(PlacowkiBadawcze),
+	4,
+	'1956-10-14',
+	'0fMzSeUSBjjqeQi4SQtS',
+	ident_current(PlacowkiBadawcze)
 );
 INSERT INTO Konstelacje VALUES(
-	'Byk',
-	'lato',
-	46,
+	'Bliźnięta',
+	'wiosna',
+	18
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	21,
-	'gwgKtjxorT',
-	'15h68m35s',
-	'70d08m09s',
+	13,
+	'y0jfHUXWAx',
+	'25h47m68s',
+	'56d53m71s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Planety VALUES(
 	ident_current(ObiektyKosmiczne),
-	35765491,
-	'brązowy karzeł',
-	'Co(NO3)2',
-	33046,
-	ident_current(UkladyPlanetarne),
+	85251270,
+	'gazowy karzeł',
+	'C2H3ClO2',
+	69309,
+	ident_current(UkladyPlanetarne)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	22,
-	'mo3ZaKNSZI',
-	'21h74m87s',
-	'18d62m06s',
+	14,
+	'PmMbKrNQz8',
+	'77h94m34s',
+	'62d10m44s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
-);
-INSERT INTO Gwizady VALUES(
-	ident_current(ObiektyKosmiczne),
-	5171573012,
-	'D',
-	570247,
-	109869,
-	ident_current(UkladyPlanetarne),
-	ident_current(Gwiazdy),
-);
-INSERT INTO ObiektyKosmiczne VALUES(
-	23,
-	'EVyhtAqTtv',
-	'60h45m22s',
-	'25d40m25s',
-	ident_current(Obserwacje),
-	ident_current(Konstelacje),
-);
-INSERT INTO UkladyPlanetarne VALUES(
-	ident_current(ObiektyKosmiczne),
-	57,
-	56,
-	1098691098,
-	3304669002,
-	ident_current(Galaktyki),
-);
-INSERT INTO ObiektyKosmiczne VALUES(
-	24,
-	'beW0WnG3cJ',
-	'99h85m45s',
-	'08d91m21s',
-	ident_current(Obserwacje),
-	ident_current(Konstelacje),
-);
-INSERT INTO Galaktyki VALUES(
-	ident_current(ObiektyKosmiczne),
-	'S',
-	373758,
-	663580,
-	848507,
-);
-INSERT INTO PlacowkiBadawcze VALUES(
-	'Haystack Observatory',
-	'Dayton, Ohio, USA',
-	'lekkie',
-	'gWr6oQFZCrLkRqZLkVKY',
-);
-INSERT INTO Obserwacje VALUES(
-	7,
-	'1896-09-12',
-	'QIi2F2Yy1T6i9ZI8qmMe',
-	ident_current(PlacowkiBadawcze),
-);
-INSERT INTO Konstelacje VALUES(
-	'Jednorożec',
-	'lato',
-	97,
-);
-INSERT INTO ObiektyKosmiczne VALUES(
-	25,
-	'GryZH4Lc0F',
-	'12h82m17s',
-	'08d02m51s',
-	ident_current(Obserwacje),
-	ident_current(Konstelacje),
-);
-INSERT INTO Planety VALUES(
-	ident_current(ObiektyKosmiczne),
-	56401466,
-	'planeta skalista',
-	'CaCl2',
-	22505,
-	ident_current(UkladyPlanetarne),
-);
-INSERT INTO ObiektyKosmiczne VALUES(
-	26,
-	'nT1c9wAuhJ',
-	'59h44m45s',
-	'11d32m91s',
-	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Gwizady VALUES(
 	ident_current(ObiektyKosmiczne),
 	2070867470,
-	'L',
-	153308,
-	469456,
+	'W',
+	774241,
+	684817,
 	ident_current(UkladyPlanetarne),
-	ident_current(Gwiazdy),
+	ident_current(Gwiazdy)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	27,
-	'hdWX3Z7CH1',
-	'95h30m76s',
+	15,
+	'gWr6oQFZCr',
+	'05h79m41s',
 	'28d76m17s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO UkladyPlanetarne VALUES(
 	ident_current(ObiektyKosmiczne),
-	37,
-	15,
-	6930933835,
-	8525127017,
-	ident_current(Galaktyki),
+	85,
+	69,
+	3360744050,
+	9856301516,
+	ident_current(Galaktyki)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	28,
-	'GryZH4Lc0F',
-	'34h54m28s',
-	'62d21m24s',
+	16,
+	'Gl0U6arR13',
+	'13h40m64s',
+	'87d43m72s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Galaktyki VALUES(
 	ident_current(ObiektyKosmiczne),
 	'Irr',
-	983050,
-	663580,
-	518767,
+	595507,
+	336074,
+	596968
 );
 INSERT INTO PlacowkiBadawcze VALUES(
-	'LIGO',
-	'Zürich, Switzerland',
+	'Haystack Observatory',
+	'Tuscaloosa, Alabama,',
 	'znaczne',
-	'ZKQzxRGEybfAOuPlzTRK',
+	'QIi2F2Yy1T6i9ZI8qmMe'
 );
 INSERT INTO Obserwacje VALUES(
-	8,
-	'1896-09-12',
-	'OBCXIEPlXob5U5Ek6to7',
-	ident_current(PlacowkiBadawcze),
+	5,
+	'1870-11-16',
+	'uWCBrG9eojQDjKdNZQ63',
+	ident_current(PlacowkiBadawcze)
 );
 INSERT INTO Konstelacje VALUES(
-	'Ryś',
-	'wiosna',
-	81,
+	'Jednorożec',
+	'jesien',
+	51
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	29,
-	'hYgoezfcWP',
-	'96h34m04s',
-	'32d09m97s',
+	17,
+	'Vhrujtdllj',
+	'16h54m92s',
+	'48d60m40s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Planety VALUES(
 	ident_current(ObiektyKosmiczne),
-	98305053,
+	22386495,
 	'planeta skalista',
-	'Co(NO3)2',
-	22386,
-	ident_current(UkladyPlanetarne),
+	'H2O2',
+	24158,
+	ident_current(UkladyPlanetarne)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	30,
-	'gtOwrIotK5',
-	'82h56m69s',
-	'56d53m71s',
+	18,
+	'GryZH4Lc0F',
+	'29h47m90s',
+	'62d21m24s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Gwizady VALUES(
 	ident_current(ObiektyKosmiczne),
-	6711078942,
-	'0',
-	955703,
-	424858,
+	5640146638,
+	'B',
+	153308,
+	852512,
 	ident_current(UkladyPlanetarne),
-	ident_current(Gwiazdy),
+	ident_current(Gwiazdy)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	31,
-	'uROLF0KlTN',
-	'88h05m62s',
-	'76d76m88s',
+	19,
+	'4f6di2QpBo',
+	'66h54m44s',
+	'54d37m43s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO UkladyPlanetarne VALUES(
 	ident_current(ObiektyKosmiczne),
-	68,
-	03,
-	0321045057,
-	3576549146,
-	ident_current(Galaktyki),
+	59,
+	35,
+	9677699998,
+	8525127017,
+	ident_current(Galaktyki)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	32,
-	'WJEuiPvGs0',
-	'33h72m42s',
-	'19d77m33s',
+	20,
+	'si5rcb3tq8',
+	'27h57m37s',
+	'25d40m25s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Galaktyki VALUES(
 	ident_current(ObiektyKosmiczne),
-	'S',
-	373758,
-	288278,
-	967769,
+	'Irr',
+	985630,
+	217705,
+	241588
 );
 INSERT INTO PlacowkiBadawcze VALUES(
-	'Sankt Andreasberg Ob',
-	'Almaty, Kazakhstan',
-	'umiarkowan',
-	'mlvIiKS8ajlyZX9eNJus',
+	'LIGO',
+	'Tribbey, Oklahoma, U',
+	'znikome',
+	'Gf6RHnddEHCA07xojEQX'
 );
 INSERT INTO Obserwacje VALUES(
-	9,
-	'1922-12-13',
-	'IZRezqqEKOPllm7FIVWL',
-	ident_current(PlacowkiBadawcze),
+	6,
+	'1932-06-30',
+	'ETBmavhSD6BkffNDHP8i',
+	ident_current(PlacowkiBadawcze)
 );
 INSERT INTO Konstelacje VALUES(
-	'Pies',
+	'Byk',
 	'zima',
-	25,
+	42
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	33,
-	'2vm8EXRrgL',
-	'27h57m37s',
-	'42d39m94s',
+	21,
+	'x3O86HI92c',
+	'96h34m04s',
+	'11d32m91s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Planety VALUES(
 	ident_current(ObiektyKosmiczne),
-	66358041,
-	'planeta skalista',
-	'CS2',
-	66358,
-	ident_current(UkladyPlanetarne),
+	15381491,
+	'gazowy karzeł',
+	'Fe2(SO4)3',
+	68481,
+	ident_current(UkladyPlanetarne)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	34,
-	'4f6di2QpBo',
-	'93h00m87s',
-	'43d70m45s',
+	22,
+	'uclRom8Oob',
+	'59h44m45s',
+	'08d02m51s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Gwizady VALUES(
 	ident_current(ObiektyKosmiczne),
-	1538149184,
-	'5',
-	974272,
-	852512,
+	1098691098,
+	'v',
+	469456,
+	032104,
 	ident_current(UkladyPlanetarne),
-	ident_current(Gwiazdy),
+	ident_current(Gwiazdy)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	35,
-	'LRlQqJbcp6',
-	'75h58m88s',
-	'93d93m79s',
+	23,
+	'qDkCYoVQmP',
+	'24h03m97s',
+	'08d91m21s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO UkladyPlanetarne VALUES(
 	ident_current(ObiektyKosmiczne),
 	67,
-	35,
-	2238649586,
-	1826809499,
-	ident_current(Galaktyki),
+	20,
+	5955075710,
+	3360744050,
+	ident_current(Galaktyki)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	36,
-	'LGo3KOZfx0',
-	'29h65m16s',
-	'46d02m11s',
+	24,
+	'TudXw5Y7os',
+	'75h58m88s',
+	'16d13m23s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Galaktyki VALUES(
 	ident_current(ObiektyKosmiczne),
 	'Irr',
-	424858,
-	693093,
-	564014,
+	817652,
+	153814,
+	605721
 );
 INSERT INTO PlacowkiBadawcze VALUES(
 	'Lulin Observatory',
-	'London, England',
-	'lekkie',
-	'K4k6h1qaKwQ5iWx0CaFH',
+	'Zürich, Switzerland',
+	'znikome',
+	'gwgKtjxorTN3c5BaGZmY'
 );
 INSERT INTO Obserwacje VALUES(
-	10,
-	'1908-07-08',
-	'hYgoezfcWPFdJUDEMQrb',
-	ident_current(PlacowkiBadawcze),
+	7,
+	'1958-10-10',
+	'ZKQzxRGEybfAOuPlzTRK',
+	ident_current(PlacowkiBadawcze)
 );
 INSERT INTO Konstelacje VALUES(
-	'Rak',
-	'wiosna',
-	20,
+	'Woźnica',
+	'jesien',
+	23
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	37,
-	'gS2KXpQ5JZ',
-	'96h07m34s',
-	'01d73m59s',
+	25,
+	'f5O0spLN8k',
+	'93h00m87s',
+	'93d93m79s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Planety VALUES(
 	ident_current(ObiektyKosmiczne),
-	26512992,
-	'gazowy olbrzym',
-	'CS2',
-	22386,
-	ident_current(UkladyPlanetarne),
+	67110789,
+	'gazowy karzeł',
+	'Na2C10H14N2O8',
+	33607,
+	ident_current(UkladyPlanetarne)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	38,
-	'z3wI9JtDO7',
-	'31h57m61s',
-	'39d63m15s',
+	26,
+	'D5WcyBH2YB',
+	'39h72m97s',
+	'83d44m48s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Gwizady VALUES(
 	ident_current(ObiektyKosmiczne),
-	2651299235,
-	'm',
-	032104,
-	250595,
+	6711078942,
+	'W',
+	716193,
+	207086,
 	ident_current(UkladyPlanetarne),
-	ident_current(Gwiazdy),
+	ident_current(Gwiazdy)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	39,
-	'EVyhtAqTtv',
-	'80h37m15s',
-	'10d92m93s',
+	27,
+	'mo3ZaKNSZI',
+	'29h65m16s',
+	'39d63m15s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO UkladyPlanetarne VALUES(
 	ident_current(ObiektyKosmiczne),
-	26,
-	98,
-	5171573012,
-	0321045057,
-	ident_current(Galaktyki),
+	77,
+	66,
+	3737584629,
+	2415880295,
+	ident_current(Galaktyki)
 );
 INSERT INTO ObiektyKosmiczne VALUES(
-	40,
-	'ETBmavhSD6',
-	'52h61m94s',
-	'54d37m43s',
+	28,
+	'RuuMkw4xl1',
+	'99h85m45s',
+	'70d08m09s',
 	ident_current(Obserwacje),
-	ident_current(Konstelacje),
+	ident_current(Konstelacje)
 );
 INSERT INTO Galaktyki VALUES(
 	ident_current(ObiektyKosmiczne),
 	'S0',
-	724623,
-	467460,
+	774241,
+	153814,
+	599363
+);
+INSERT INTO PlacowkiBadawcze VALUES(
+	'Thai National Observ',
+	'Almaty, Kazakhstan',
+	'ogromne',
+	'K4k6h1qaKwQ5iWx0CaFH'
+);
+INSERT INTO Obserwacje VALUES(
+	8,
+	'1996-02-17',
+	'OBCXIEPlXob5U5Ek6to7',
+	ident_current(PlacowkiBadawcze)
+);
+INSERT INTO Konstelacje VALUES(
+	'Mały',
+	'jesien',
+	37
+);
+INSERT INTO ObiektyKosmiczne VALUES(
+	29,
+	'XPcYB57i9g',
+	'17h37m82s',
+	'00d73m84s',
+	ident_current(Obserwacje),
+	ident_current(Konstelacje)
+);
+INSERT INTO Planety VALUES(
+	ident_current(ObiektyKosmiczne),
+	35765491,
+	'planeta podwójna',
+	'Na2C10H14N2O8',
+	46759,
+	ident_current(UkladyPlanetarne)
+);
+INSERT INTO ObiektyKosmiczne VALUES(
+	30,
+	'jEZaCrplTg',
+	'78h09m39s',
+	'59d73m97s',
+	ident_current(Obserwacje),
+	ident_current(Konstelacje)
+);
+INSERT INTO Gwizady VALUES(
+	ident_current(ObiektyKosmiczne),
+	9742723297,
+	'5',
 	265129,
+	232484,
+	ident_current(UkladyPlanetarne),
+	ident_current(Gwiazdy)
+);
+INSERT INTO ObiektyKosmiczne VALUES(
+	31,
+	'uROLF0KlTN',
+	'80h37m15s',
+	'10d92m93s',
+	ident_current(Obserwacje),
+	ident_current(Konstelacje)
+);
+INSERT INTO UkladyPlanetarne VALUES(
+	ident_current(ObiektyKosmiczne),
+	37,
+	69,
+	2651299235,
+	5187672349,
+	ident_current(Galaktyki)
+);
+INSERT INTO ObiektyKosmiczne VALUES(
+	32,
+	'1rJgOV1i4u',
+	'34h64m56s',
+	'13d19m24s',
+	ident_current(Obserwacje),
+	ident_current(Konstelacje)
+);
+INSERT INTO Galaktyki VALUES(
+	ident_current(ObiektyKosmiczne),
+	'SB',
+	250595,
+	724623,
+	153308
+);
+INSERT INTO PlacowkiBadawcze VALUES(
+	'National Optical Ast',
+	'Dayton, Ohio, USA',
+	'lekkie',
+	'hUCw0Hq5q4UIhRncUD9a'
+);
+INSERT INTO Obserwacje VALUES(
+	9,
+	'1908-07-08',
+	'qDkCYoVQmPcpy7ZGw3WD',
+	ident_current(PlacowkiBadawcze)
+);
+INSERT INTO Konstelacje VALUES(
+	'Pies',
+	'wiosna',
+	51
+);
+INSERT INTO ObiektyKosmiczne VALUES(
+	33,
+	'f5O0spLN8k',
+	'52h61m94s',
+	'19d77m33s',
+	ident_current(Obserwacje),
+	ident_current(Konstelacje)
+);
+INSERT INTO Planety VALUES(
+	ident_current(ObiektyKosmiczne),
+	01710623,
+	'gazowy karzeł',
+	'CH3COONH4',
+	59550,
+	ident_current(UkladyPlanetarne)
+);
+INSERT INTO ObiektyKosmiczne VALUES(
+	34,
+	'2vm8EXRrgL',
+	'95h30m85s',
+	'99d65m60s',
+	ident_current(Obserwacje),
+	ident_current(Konstelacje)
+);
+INSERT INTO Gwizady VALUES(
+	ident_current(ObiektyKosmiczne),
+	1533082745,
+	'D',
+	570247,
+	595507,
+	ident_current(UkladyPlanetarne),
+	ident_current(Gwiazdy)
+);
+INSERT INTO ObiektyKosmiczne VALUES(
+	35,
+	'ruMwjOgpxv',
+	'33h72m42s',
+	'55d04m18s',
+	ident_current(Obserwacje),
+	ident_current(Konstelacje)
+);
+INSERT INTO UkladyPlanetarne VALUES(
+	ident_current(ObiektyKosmiczne),
+	20,
+	67,
+	2250517894,
+	2070867470,
+	ident_current(Galaktyki)
+);
+INSERT INTO ObiektyKosmiczne VALUES(
+	36,
+	'IZRezqqEKO',
+	'26h86m17s',
+	'01d73m59s',
+	ident_current(Obserwacje),
+	ident_current(Konstelacje)
+);
+INSERT INTO Galaktyki VALUES(
+	ident_current(ObiektyKosmiczne),
+	'SB',
+	232484,
+	684817,
+	959108
+);
+INSERT INTO PlacowkiBadawcze VALUES(
+	'Behlen Observatory',
+	'Uppsala, Sweden',
+	'ogromne',
+	'WYMdHdsdN7AWNxm4lkgK'
+);
+INSERT INTO Obserwacje VALUES(
+	10,
+	'1998-05-03',
+	'aU7OlhSV4ikNyk3zB4Dg',
+	ident_current(PlacowkiBadawcze)
+);
+INSERT INTO Konstelacje VALUES(
+	'Ryś',
+	'jesien',
+	42
+);
+INSERT INTO ObiektyKosmiczne VALUES(
+	37,
+	'HeHNGNNk54',
+	'96h07m34s',
+	'85d46m48s',
+	ident_current(Obserwacje),
+	ident_current(Konstelacje)
+);
+INSERT INTO Planety VALUES(
+	ident_current(ObiektyKosmiczne),
+	95910833,
+	'gazowy olbrzym',
+	'Co(NO3)2',
+	59696,
+	ident_current(UkladyPlanetarne)
+);
+INSERT INTO ObiektyKosmiczne VALUES(
+	38,
+	'0vO4z0Sxqq',
+	'21h74m87s',
+	'02d47m69s',
+	ident_current(Obserwacje),
+	ident_current(Konstelacje)
+);
+INSERT INTO Gwizady VALUES(
+	ident_current(ObiektyKosmiczne),
+	4675949793,
+	'C',
+	518767,
+	595507,
+	ident_current(UkladyPlanetarne),
+	ident_current(Gwiazdy)
+);
+INSERT INTO ObiektyKosmiczne VALUES(
+	39,
+	'RuuMkw4xl1',
+	'12h82m17s',
+	'09d94m22',
+	ident_current(Obserwacje),
+	ident_current(Konstelacje)
+);
+INSERT INTO UkladyPlanetarne VALUES(
+	ident_current(ObiektyKosmiczne),
+	81,
+	98,
+	1826809499,
+	6711078942,
+	ident_current(Galaktyki)
+);
+INSERT INTO ObiektyKosmiczne VALUES(
+	40,
+	'uWCBrG9eoj',
+	'82h56m69s',
+	'11d86m74s',
+	ident_current(Obserwacje),
+	ident_current(Konstelacje)
+);
+INSERT INTO Galaktyki VALUES(
+	ident_current(ObiektyKosmiczne),
+	'E',
+	288278,
+	217705,
+	955703
 );
