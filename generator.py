@@ -58,7 +58,8 @@ class Generator:
                 string  = string + self.data[self.scheme[i][0]][valueIndex][0:self.scheme[i][1]]
                 if self.scheme[i][0] != 'integer':
                     string = string + "'"
-                string = string + ','
+                if i < len(self.scheme) - 1:
+                    string = string + ','
                 query.append(string)
                 if self.scheme[i][0] in uniqueTypes:
                     del self.data[self.scheme[i][0]][valueIndex]
