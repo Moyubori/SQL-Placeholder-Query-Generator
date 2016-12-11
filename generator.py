@@ -6,6 +6,14 @@ specialTypes = [
     'id'
 ]
 
+uniqueTypes = [
+    'placowki_nazwa',
+    'placowki_adres',
+    'kon_nazwa',
+    'rektascensja',
+    'deklinacja',
+]
+
 class Generator:
 
     #scheme is a list containing tuples with type name and it's length in characters
@@ -39,23 +47,32 @@ class Generator:
             if self.scheme[i][0] == 'ref':
                 query.append('\tident_current(' + self.references[self.scheme[i][1]] + '),')
             elif self.scheme[i][0] == 'id':
-                query.append('\t' + str(len(self.generatedQueries) + self.scheme[i][1] + 1) + ',')
+                query.append('\t' + str(self.scheme[i][1] + 1) + ',')
+                self.scheme[i][1] = self.scheme[i][1] + 1
             else:
                 #takes a random value of needed type, cuts it to the desired length and appends to the query list
                 valueIndex = randint(1,len(self.data[self.scheme[i][0]])) - 1
-                query.append('\t' + self.data[self.scheme[i][0]][valueIndex][0:self.scheme[i][1]] + ',')
-                if self.scheme[i][0] == 'varchar':
+                string = '\t'
+                if self.scheme[i][0] != 'integer':
+                    string = string + "'"
+                string  = string + self.data[self.scheme[i][0]][valueIndex][0:self.scheme[i][1]]
+                if self.scheme[i][0] != 'integer':
+                    string = string + "'"
+                string = string + ','
+                query.append(string)
+                if self.scheme[i][0] in uniqueTypes:
                     del self.data[self.scheme[i][0]][valueIndex]
         query.append(');')
         return query
 
-    def mixQueries(self, queriesToAdd):
-        if len(queriesToAdd) is not len(self.generatedQueries):
+    def mixQueries(self, queriesToAdd, listProportions = 1):
+        if len(queriesToAdd) / listProportions != len(self.generatedQueries):
             raise Exception('Lists are not the same size')
         newQueriesList = []
         for i in range(len(self.generatedQueries)):
             newQueriesList.append(self.generatedQueries[i])
-            newQueriesList.append(queriesToAdd[i])
+            for j in range(listProportions):
+                newQueriesList.append(queriesToAdd[i * listProportions + j])
         self.generatedQueries = newQueriesList
 
     def generateQueries(self, numberOfQueries):
